@@ -1,155 +1,335 @@
-@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
-
-.page-header{
-  text-align: center;    
-}
-
-/*social buttons*/
-.btn-social{
-  color: white;
-  opacity:0.9;
-}
-.btn-social:hover {
-  color: white;
-    opacity:1;
-}
-.btn-facebook {
-background-color: #3b5998;
-opacity:0.9;
-}
-.btn-twitter {
-background-color: #00aced;
-opacity:0.9;
-}
-.btn-linkedin {
-background-color:#0e76a8;
-opacity:0.9;
-}
-.btn-github{
-  background-color:#000000;
-  opacity:0.9;
-}
-.btn-google {
-  background-color: #c32f10;
-  opacity: 0.9;
-}
-.btn-stackoverflow{
-  background-color: #D38B28;
-  opacity: 0.9;
-}
-
-/* resume stuff */
-
-.bs-callout {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    border-color: #eee;
-    border-image: none;
-    border-radius: 3px;
-    border-style: solid;
-    border-width: 1px 1px 1px 5px;
-    margin-bottom: 5px;
-    padding: 20px;
-}
-.bs-callout:last-child {
-    margin-bottom: 0px;
-}
-.bs-callout h4 {
-    margin-bottom: 10px;
-    margin-top: 0;
-}
-
-.bs-callout-danger {
-    border-left-color: #d9534f;
-}
-
-.bs-callout-danger h4{
-    color: #d9534f;
-}
-
-.resume .list-group-item:first-child, .resume .list-group-item:last-child{
-  border-radius:0;
-}
-
-/*makes an anchor inactive(not clickable)*/
-.inactive-link {
-   pointer-events: none;
-   cursor: default;
-}
-
-.resume-heading .social-btns{
-  margin-top:15px;
-}
-.resume-heading .social-btns i.fa{
-  margin-left:-5px;
-}
+/*fonts*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
 
 
+/*global*/
+.navbar-default .navbar-nav > .active > a {
+    background-color: #ccc;
+}
+.navbar-default .navbar-nav > li:hover> a, .navbar-default .navbar-nav > .active:hover > a {
+    background-color: #ffb424;
+}
+.navbar-default .social-list > li:hover> a {
+    color: #ffb424;
+    background: none;
+}
+h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+}
+/*global end*/
 
-@media (max-width: 992px) {
-  .resume-heading .social-btn-holder{
-    padding:5px;
-  }
+/*header navbar*/
+nav.navbar {
+    background: #fff;
+    font-family: 'Lato', serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+}
+.scroll-down {
+    margin-top: 3%;
 }
 
+/*social list*/
+.social-list {
+    margin: 7px 25px;
+}
+.social-list li {
+    margin: 0 6px;
+}
+.social-list li a {
+    border: 1px solid black;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    padding: 2px 4px;
+    display: block;
+    width: 33px;
+    height: 33px;
+}
+.social-list li:hover i {
+    color: #ffb424;
+}
+.fa-linkedin{
+    padding-left: 1px;
+}
+.fa-facebook{
+    padding: 3px 0 0 3px;
+}
+.social-list li i {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    vertical-align: baseline;
+}
+/*social list end*/
 
-/* skill meter in resume. copy pasted from http://bootsnipp.com/snippets/featured/progress-bar-meter */
+/*banner*/
+header .banner {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/header1-background_zpsdlk7p04z.jpg") 70% no-repeat;
+    background-position: top;
+    background-size: 100%;
+    height: 55%;
+    position: relative;
+    z-index: -10;
+}
+.banner-content {
+    color: #fff;
+    font-family: "Lato", serif;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 17%;
+    letter-spacing: 0.4rem;
+}
+.banner-content h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+.banner-content h3 {
+    font-size: 3rem;
+    margin: 5% 0;
+    color: #eeeeee;
+    font-weight: bold;
+}
+/*banner end*/
+/*header end*/
 
-.progress-bar {
-    text-align: left;
-	white-space: nowrap;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	cursor: pointer;
+/*about*/
+.about {
+    background: #eee;
+}
+.about-content {
+    margin-top: 7%;
+    font-family: "Lato", serif;
+}
+.about-content h2 {
+    margin: 5%;
+}
+.about-text {
+    font-size: 2rem;
+    line-height: 2;
+    margin: 5% 0 7%;
+}
+/*about end*/
+
+/*works*/
+.block {
+    box-shadow: 4px 4px 7px #333;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10%;
+}
+.works {
+    padding-bottom: 3%;
+    background: #fff;
+}
+.works-thumb {
+    height: 300px;
+}
+#work-1 {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/twitch_zpscblks89r.jpg") no-repeat 100%;
+    background-size: cover;
+}
+#work-2 {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/weather_zpso9kxmj13.jpg") no-repeat 100%;
+    background-size: cover;
+}
+#work-3 {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/tribute_zpsnwcehwkk.jpg") no-repeat 100%;
+    background-size: cover;
+}
+#work-4 {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/wikisearch_zps7uvspjn1.jpg") no-repeat 100%;
+    background-size: cover;
+}
+#work-5 {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/quote_zpsk9hgyziu.jpg") no-repeat 100%;
+    background-size: cover;
+}
+#work-6 {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/photoblog_zpsvvj8jgc2.jpg") no-repeat 100%;
+    background-size: cover;
+}
+.block::after, .block::before {
+    content: '';
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+.block::after {
+    left: -50%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.block::before {
+    right: -50%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.block:hover:after {
+    left: 0;
+}
+.block:hover:before {
+    right: 0;
+}
+.works-caption {
+    text-align: center;
+    font-family: "Lato", serif;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    position: absolute;
+    border-radius: 10px;
+    display: block;
+    padding: 15px 2px;
+    width: 60%;
+    left: 20%;
+    top:-40%;
+    z-index: 1;
+    color: #fff;
+    border: 2px solid #fff;
+    -webkit-transition: top 0.5s;
+    transition: top 0.5s;
+}
+.block:hover .works-caption {
+    top: 33%;
+}
+.works h2 {
+    margin: 7% 0;
+}
+/*works end*/
+
+/*skillls*/
+.skills {
+    background: #333;
+    text-align: center;
+}
+.skills h2 {
+    margin: 7%;
+    color: #fff;
+}
+.skills .skills-thumb {
+   margin-bottom: 5%;
+}
+/*skills end*/
+
+/*social list main*/
+.social-footer {
+    background: #fff;
+}
+.social-footer h2 {
+    margin: 5% 0 3%;
+}
+.social-footer .social-list {
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 5%;
+}
+.social-footer .social-list li a{
+    display: block;
+    position: relative;
+    border: 2px solid #444;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 60px;
+    height: 60px;
+}
+.social-footer .social-list li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 15px;
+}
+.social-footer .social-list li a i {
+    margin-top: 5px;
+    color: #444
+}
+.social-footer .social-list li:hover i {
+    color: #ffb424;
+}
+.social-footer .social-list .fa-facebook {
+    padding: 2px 0 0 0;
 }
 
-.progress-bar > .progress-type {
-	padding-left: 10px;
+/*footer*/
+footer {
+    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/footer-bg_zps1imhqalh.jpg");
+    background-size: cover;
+    color: #fff;
 }
-
-.progress-meter {
-	min-height: 15px;
-	border-bottom: 2px solid rgb(160, 160, 160);
-  margin-bottom: 15px;
+footer h2 {
+    margin-top: 7%;
 }
-
-.progress-meter > .meter {
-	position: relative;
-	float: left;
-	min-height: 15px;
-	border-width: 0px;
-	border-style: solid;
-	border-color: rgb(160, 160, 160);
+.contact { 
+    margin: 5% 0;
 }
-
-.progress-meter > .meter-left {
-	border-left-width: 2px;
+.contacts-data {
+    margin: 3% 7%;
 }
-
-.progress-meter > .meter-right {
-	float: right;
-	border-right-width: 2px;
+.contacts-data .btn {
+    background: transparent;
+    padding: 15px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 7%;
 }
-
-.progress-meter > .meter-right:last-child {
-	border-left-width: 2px;
+.contacts-data .btn:hover {
+    background: #ffb424;
+    color: #fff;
 }
-
-.progress-meter > .meter > .meter-text {
-	position: absolute;
-	display: inline-block;
-	bottom: -20px;
-	width: 100%;
-	font-weight: 700;
-	font-size: 0.85em;
-	color: rgb(160, 160, 160);
-	text-align: left;
+.contact .button-icon {
+    padding-left: 10px;
 }
-
-.progress-meter > .meter.meter-right > .meter-text {
-	text-align: right;
+.contact-text {
+    font-family: "Lato", serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.33rem;
+    padding-left: 7%;
 }
+/*footer end*/
 
+/* media queries */
+@media screen and (min-width: 991px) {
+    header .banner {
+        background-position: center;
+    }
+}
+@media screen and (max-width: 990px) {
+    header .banner-content {
+        text-align: center;
+    }
+    .scroll-down {
+        display: none;
+    }
+    .contacts-data {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    header .banner-content h1 {
+        font-size: 4rem;
+    }
+    header .banner-content h3 {
+        font-size: 2.5rem;
+    }
+    header .social-list {
+        display: none;
+    }
+    .block {
+        width: 65%;
+        margin: 20px auto;
+    }
+    .skills img {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 491px) {
+    header .banner-content h1 {
+        font-size: 2.5rem;
+    }
+    header .banner-content h3 {
+        font-size: 1.5rem;
+    }
+}

@@ -126,11 +126,13 @@ header .banner {
     height: 300px;
 }
 #work-1 {
-    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/twitch_zpscblks89r.jpg") no-repeat 100%;
+    
+    background: url("http://i44.photobucket.com/albums/f8/gustavo_herrera1/dash%20siac_zpsuvr5bqpp.png") no-repeat 100%;
     background-size: cover;
 }
 #work-2 {
-    background: url("http://i1378.photobucket.com/albums/ah89/andreykokhanevich/portfolio%20page/weather_zpso9kxmj13.jpg") no-repeat 100%;
+
+    background: url("http://i44.photobucket.com/albums/f8/gustavo_herrera1/screencapture-vimo-dev-entregas-22-1502994379508_zpsnqibp2tm.png") no-repeat 100%;
     background-size: cover;
 }
 #work-3 {
